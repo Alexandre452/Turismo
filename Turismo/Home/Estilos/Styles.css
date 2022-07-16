@@ -1,0 +1,160 @@
+body{
+    font-family: "Open Sans",sans-serif;
+}
+
+
+.encabezado{
+    background-size: cover;
+    min-height: 75vh;
+    position:relative;
+    text-shadow: 8px 8px 8px rgba(55, 226, 12, 0.849);
+}
+
+.encabezado:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(21, 97, 31);
+    position: absolute;
+    opacity: 0.2;
+    z-index: 10;
+}
+
+h1{
+    font-size: 6rem;
+    font-family: 'Lobster', cursive;
+    background-size: cover;
+}
+
+.color-overlay{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 248, 232);
+}
+
+.color-overlay video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.historia{
+    font-size: 30px;
+}
+
+@media (max-width: 768px){
+    .color-overlay{
+        min-height: 30vh;
+    }
+    .historia{
+        font-size: 18px;
+    }
+    h1{
+        font-size: calc(1.525rem + 3.3vw);
+    }
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+}
+
+.page-transition{
+    position: absolute;
+    top: 0;
+    background-color: rgb(83, 67, 64);
+    width: 100%;
+    height: 0%;
+}
+
+.navbar{
+    background-color: rgb(187, 153, 129);
+    font-size: 1.5rem;
+}
+
+.color-de-texto{
+    color: rgb(244, 252, 217);
+}
+
+.color-de-texto:hover{
+    color: rgb(197, 216, 164);
+}
+
+.nav-item:hover{
+    background-color: rgb(83, 67, 64);
+}
+
+.navbar-brand{
+    font-size: 1.5rem;
+}
+
+.historia{
+    background-color: rgb(244, 252, 217);
+    color: rgb(83, 67, 64);
+}
+
+.historia:hover{
+    background-color: rgb(187, 153, 129);
+    transition: all 0.3s linear;
+}
+
+.transicion{
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    z-index: 20;
+}
+
+.container-fluid{
+    padding-right: 0;
+    box-sizing: content-box;
+}
+
+@media only screen and (max-width: 800px){
+    .row .column{
+        flex: 50%;
+
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .row .column{
+        flex: 100%;
+
+    }
+}
+
+.navbar-toggler{
+    color:rgb(197, 216, 164);
+}
+
+.footer{
+    background-color: rgb(197, 216, 164);
+}
+
+.gallery{
+    background-color: rgb(197, 216, 164);
+}
+
+.btn{
+    background-color: rgb(83, 67, 64);
+}
+
+.display-6{
+    font-size: 24px;
+    color: rgb(83, 67, 64);
+}
+
+.contenido{
+    background-color: rgb(244, 252, 217);
+}
